@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        var xmlhttp;
+        function getNum()
+        {
+            xmlhttp=new XMLHttpRequest();
+            xmlhttp.onreadystatechange=callback;
+        }
+        // when information comes fron server
+        function callback()
+        {
+            if(xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+                document.getElementById("result").innerHTML=xmlhttp.responseText;
+            }
+
+        }
+
+        </script>
+   </head>
+   <body>
+       <div id="result">
+            
+       </div>
+       <input type="button" value="random number" onclick="getNum()">
+   </body>
+        
+</html>
