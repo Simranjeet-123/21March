@@ -3,11 +3,19 @@
         <title>
             Dynamic content
         </title>
+        <script language="javascript" type="text/javascript">
+        function changeContent()
+        {
+            var theDiv=document.getElementById("content");
+            theDiv.innerHTML="<h1> look!!!! Soon it will be summer!!!!</h1>";
+        }
+        </script>
     </head>
     <body>
         <div id='content'>
            <h1 style="color:blueviolet"> Here is our content!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
            <p style="color:rgb(255, 000,000)">Happy Holi!!!!!!</p>
+           <input type="button" value="change content" onclick="changeContent()"/>
         </div>
     </body>
 </html>
